@@ -1,0 +1,12 @@
+/{
+    mypins {
+        compatible = "gpio-keys";
+        pin1: pin_1 {
+            gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        };
+    };
+
+    aliases{
+        sw0 = &pin1;
+    };
+};
